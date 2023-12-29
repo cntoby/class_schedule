@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.66.20:3306/class_schedule?encoding=utf8mb4
+    username: toby
+    password: ihiteyou0
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+
+mybatis:
+  mapper-locations: classpath*:mapper/*Mapper.xml
